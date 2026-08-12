@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    margin-top: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;   
+}
+.footer p{
+    color: rgb(95, 94, 94);
+}
+.footer ul{
+    list-style: none;
+    color: #1b4332;
+}
+.footer a{  
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: rgb(95, 94, 94);
+}
+.copy-right{
+    text-align: center;
+    color: rgb(95, 94, 94);
+    margin-top: 10px;
+}

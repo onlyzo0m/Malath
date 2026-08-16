@@ -1,4 +1,33 @@
-Malath-Nav
+/*Malath-Nav*/
+:root {
+  --brand-color: #1b5e3a;
+  --brand-light-bg: #f4f8f5;
+}
+
+.btn-success {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+
+.bg-success {
+  background-color: var(--brand-color) !important;
+}
+
+
+.text-success {
+  color: var(--brand-color) !important;
+}
+
+
+.bg-light {
+  background-color: var(--brand-light-bg) !important;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
 body {
     background-color: #057734;
 }
@@ -6,7 +35,7 @@ body {
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
     color: #126845 !important;
-   
+  
     font-weight: 600;
     
 }
@@ -14,7 +43,7 @@ body {
 .nav-underline .nav-link.active,
 .nav-underline .nav-link:hover {
     border-bottom-color: #126845 !important;
-=======
+}
 .hero {
   background-color: #fafaf8;
   min-height: 90vh;
@@ -32,5 +61,34 @@ body {
 .btn-outline-success:hover:hover {
   background: #244a3d;
   transition: all 1s;
-  main
+  
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    margin-top: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;   
+}
+.footer p{
+    color: rgb(95, 94, 94);
+}
+.footer ul{
+    list-style: none;
+    color: #1b4332;
+}
+.footer a{  
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: rgb(95, 94, 94);
+}
+.copy-right{
+    text-align: center;
+    color: rgb(95, 94, 94);
+    margin-top: 10px;
 }

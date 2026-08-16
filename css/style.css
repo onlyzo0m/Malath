@@ -1,3 +1,4 @@
+Malath-Nav
 body {
     background-color: #057734;
 }
@@ -13,4 +14,23 @@ body {
 .nav-underline .nav-link.active,
 .nav-underline .nav-link:hover {
     border-bottom-color: #126845 !important;
+=======
+.hero {
+  background-color: #fafaf8;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.btn-success {
+  background: #2e5e4e;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #244a3d;
+}
+.btn-outline-success:hover:hover {
+  background: #244a3d;
+  transition: all 1s;
+  main
 }

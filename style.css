@@ -1,0 +1,30 @@
+
+:root {
+  --brand-color: #1b5e3a;
+  --brand-light-bg: #f4f8f5;
+}
+
+.btn-success {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+
+.bg-success {
+  background-color: var(--brand-color) !important;
+}
+
+
+.text-success {
+  color: var(--brand-color) !important;
+}
+
+
+.bg-light {
+  background-color: var(--brand-light-bg) !important;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}

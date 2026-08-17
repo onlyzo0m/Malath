@@ -1,4 +1,65 @@
+:root{
+  --primary-green-color: #1E5E3A;
+  --background-section: #F6F8F5;
+}
+/*Start Global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-green{
+  color: var(--primary-green-color);
+}
+.fs-14{
+  font-size: 14px;
+}
+/*End Global*/
 
+
+/*Start Nav*/
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-green-color) !important;
+    font-weight: 600;   
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .nav-link:hover {
+    border-bottom-color: var(--primary-green-color) !important;
+}
+/*End Nav*/
+
+/*Start Hero*/
+.hero {
+  background-color: #fafaf8;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.btn-success {
+  background: var(--primary-green-color);
+  border: none;
+}
+.btn-success:hover {
+  background: #244a3d;
+}
+.btn-outline-success:hover{
+  background: #244a3d;
+  transition: all 1s; 
+}
+/*End Hero*/
+
+/*Start Footer*/
+.footer{
+  background-color: #E6EDE6;
+}
+.copy-right{
+  background-color: var(--primary-green-color) !important;
+}
+/*End Footer*/
+
+
+/*كود حبيبه*/
 /*:root {
   --brand-color: #1b5e3a;
   --brand-light-bg: #f4f8f5;
@@ -13,7 +74,6 @@
 .bg-success {
   background-color: var(--brand-color) !important;
 }
-
 
 .text-success {
   color: var(--brand-color) !important;
@@ -31,66 +91,3 @@
 body {
     background-color: #057734;
 }*/
-*{
-    margin: 0;
-    padding: 0;
-}
-/*Malath-Nav*/
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    color: #126845 !important;
-  
-    font-weight: 600;
-    
-}
-
-.nav-underline .nav-link.active,
-.nav-underline .nav-link:hover {
-    border-bottom-color: #126845 !important;
-}
-.hero {
-  background-color: #fafaf8;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-}
-.btn-success {
-  background: #2e5e4e;
-  border: none;
-}
-
-.btn-success:hover {
-  background: #244a3d;
-}
-.btn-outline-success:hover:hover {
-  background: #244a3d;
-  transition: all 1s;
-  
-}
-
-
-.footer{
-    margin-top: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;   
-}
-.footer p{
-    color: rgb(95, 94, 94);
-}
-.footer ul{
-    list-style: none;
-    color: #1b4332;
-}
-.footer a{  
-    display: block;
-    margin-top: 15px;
-    text-decoration: none;
-    color: rgb(95, 94, 94);
-}
-.copy-right{
-    text-align: center;
-    color: rgb(95, 94, 94);
-    margin-top: 10px;
-}

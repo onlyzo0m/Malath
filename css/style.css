@@ -3,6 +3,9 @@
   --background-section: #F6F8F5;
 }
 /*Start Global*/
+html{
+  scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;

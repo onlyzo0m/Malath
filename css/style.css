@@ -1,3 +1,39 @@
+:root{
+  --primary-green-color: #1E5E3A;
+  --background-section: #F6F8F5;
+}
+/*Start Global*/
+html{
+  scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-green{
+  color: var(--primary-green-color);
+}
+.fs-14{
+  font-size: 14px;
+}
+/*End Global*/
+
+
+/*Start Nav*/
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-green-color) !important;
+    font-weight: 600;   
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .nav-link:hover {
+    border-bottom-color: var(--primary-green-color) !important;
+}
+/*End Nav*/
+
+/*Start Hero*/
 .hero {
   background-color: #fafaf8;
   min-height: 100vh;
@@ -11,4 +47,71 @@
 .btn-outline-success:hover {
   background: #244a3d;
   transition: all 1s;
+.btn-success {
+  background: var(--primary-green-color);
+  border: none;
 }
+.btn-success:hover {
+  background: #244a3d;
+}
+.btn-outline-success:hover{
+  background: #244a3d;
+  transition: all 1s; 
+}
+/*End Hero*/
+
+/*Start Footer*/
+.bg-section{
+  background-color: #E6EDE6;
+}
+.copy-right{
+  background-color: var(--primary-green-color) !important;
+}
+/*End Footer*/
+
+/*Start About Page*/
+.icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/*End About Page*/
+/*كود حبيبه*/
+/*:root {
+  --brand-color: #1b5e3a;
+  --brand-light-bg: #f4f8f5;
+}
+
+.btn-success {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+
+.bg-success {
+  background-color: var(--brand-color) !important;
+}
+
+.text-success {
+  color: var(--brand-color) !important;
+}
+
+
+.bg-light {
+  background-color: var(--brand-light-bg) !important;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+body {
+    background-color: #057734;
+}*/

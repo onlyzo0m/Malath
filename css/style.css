@@ -36,10 +36,17 @@ html{
 /*Start Hero*/
 .hero {
   background-color: #fafaf8;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
+
+.btn-success:hover {
+  background: #244a3d;
+}
+.btn-outline-success:hover {
+  background: #244a3d;
+  transition: all 1s;
 .btn-success {
   background: var(--primary-green-color);
   border: none;

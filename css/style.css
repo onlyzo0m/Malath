@@ -9,6 +9,7 @@ html{
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .text-green{
   color: var(--primary-green-color);
@@ -53,7 +54,7 @@ html{
 /*End Hero*/
 
 /*Start Footer*/
-.footer{
+.bg-section{
   background-color: #E6EDE6;
 }
 .copy-right{
@@ -61,7 +62,20 @@ html{
 }
 /*End Footer*/
 
-
+/*Start About Page*/
+.icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/*End About Page*/
 /*كود حبيبه*/
 /*:root {
   --brand-color: #1b5e3a;

@@ -42,21 +42,15 @@ html{
 }
 
 .btn-success:hover {
-  background: #244a3d;
+  background: var(--primary-green-color);
 }
 .btn-outline-success:hover {
-  background: #244a3d;
+  background: var(--primary-green-color);
   transition: all 1s;
+}
 .btn-success {
   background: var(--primary-green-color);
   border: none;
-}
-.btn-success:hover {
-  background: #244a3d;
-}
-.btn-outline-success:hover{
-  background: #244a3d;
-  transition: all 1s; 
 }
 /*End Hero*/
 
@@ -76,6 +70,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;

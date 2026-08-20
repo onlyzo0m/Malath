@@ -76,6 +76,61 @@ html{
     -o-border-radius: 50%;
 }
 /*End About Page*/
+
+/* Custom Styles overriding or adding to Bootstrap */
+
+/* 1. Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* لون خلفية مريح للعين */
+}
+
+/* 2. Custom Navbar Styling */
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #0d6efd !important; /* توحيد لون اللوجو بلون البراند */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #0d6efd; /* خط تحت اسم الصفحة النشطة */
+}
+
+/* 3. Search Section */
+.explore-search h1 {
+    color: #212529;
+}
+
+/* Customizing Search Input Focus */
+.explore-search .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.25);
+}
+
+/* 4. Job Cards Enhancements */
+.card {
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* انيميشن عند التحويم */
+}
+
+/* Hover Effect on Cards */
+.card:hover {
+    transform: translateY(-5px); /* رفع الكارت لفوق سنّة بسيطة */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Company Logo inside Card */
+.card-img-top {
+    object-fit: contain;
+    height: 50px;
+}
+
+/* 5. Footer Customization */
+footer {
+    font-size: 0.9rem;
+    border-top: 1px solid #343a40;
+}
+
 /*كود حبيبه*/
 /*:root {
   --brand-color: #1b5e3a;

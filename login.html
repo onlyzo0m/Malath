@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Malath login </title>
     <!--FontAwesome-->
     <link rel="stylesheet" href="./css/all.min.css">
     <!--Bootstrap Link-->
@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <!--Start Nav-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
@@ -53,74 +52,57 @@
         </ul>
         <div class="r-nav  d-flex  gap-2 my-1">
           <button class="btn btn-outline-success px-4 text-nowrap">Sign Up</button>
-          <button class="btn btn-success px-4 text-nowrap">
-            <a class="text-white  text-decoration-none" href="./login.html">Login</a>
-          </button>
         </div>
     </div>
 
     </div>
   </nav>
   <!--End Nav-->
+    <div class="d-flex">
+        <div class="container-fluid  p-3 m-3 col-5 mx-auto">
+            <h2>Welcome Back!</h2>
+            <p class="text-muted text-center">Log in to your account and continue sharing knowledge.</p>
+            <img class="w-100" src="./assets/login Photo.jpg" alt="Login">
+        </div>
 
-    <!--Start Content-->
-        <section class="landing container-fluid d-flex align-items-start justify-content-between vh-100 mt-5">
-           
-                <div class="info p-2 ps-md-5 ms-md-auto mt-lg-5 h-75">
-                <div class="title mb-5">
-                    <h1 class="mb-3">Share Books, <br>Share <span class="text-green">Knowledge</span></h1>
-                    <p class="fs-14 text-muted">Malath is a platform for sharing and borrowing <br> books in a simple and safe way. Join a community <br>of learners and book lovers.</p>
-                </div>
-                <div class="buttons d-flex mb-5">
-                    <a href="#"><button class="btn btn-success me-4 py-2 px-3"><i class="bi bi-book me-2"></i>Explore Books</button> </a>
-                    <a href="#"><button class="btn btn-outline-success py-2 px-3"><i class="fa-solid fa-plus me-2"></i>Add Your Book</button> </a>
-                </div>
+        <!-- start-form -->
+        <div class="container-fluid  ">
+            <div class=" border border-3 border-muted rounded-3 p-3 m-3 col-5 mx-auto ">
+                <form>
+                    <div class="login-TEXT">
+                        <h2 class="text-start mb-4">Login</h2>
+                        <p class="text-muted mb-4">Please enter your username and password to login.</p>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" name="Email" required>
+                    </div>
 
-                <div class="details container justify-content-between">
-                
-                    <div class="row">
-                    <div class="box col-4 d-flex mb-2 ps-0">
-                        <i class="bi bi-people me-2 text-green bg-section icon"></i>
-                        <div class="description">
-                            <h5 class="fs-14 mb-0">Community <br> Driven</h5>
-                            <p class="fs-14 text-muted">Join thousands of <br> active members.</p>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" name="Password" required>
+                    </div>
+                    <div class=" d-flex  mb-3">
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" name="RememberMe">
+                            <label for="rememberMe" class="form-check-label">Remember Me</label>
+                        </div>
+                        <div class="ms-auto">
+                            <a href="#" class="text-decoration-none text-success">Forgot Password?</a>
                         </div>
                     </div>
 
-                    <div class="box  col-4 d-flex mb-2 ps-0">
-                        
-                            <i class="bi bi-shield-check me-2 text-green bg-section icon"></i>
-                       
-                        <div class="description">
-                            <h5 class="fs-14 mb-0">Safe & Easy <br> Sharing</h5>
-                            <p class="fs-14 text-muted">Connect and share <br> with trust.</p>
-                        </div>
-                    </div>
+                    <button type="submit" class="btn btn-success w-100 py-2">Login</button>
 
-
-                    <div class="box col-4 d-flex mb-2 ps-0">
-                            <i class="bi bi-book me-2 text-green bg-section icon"></i>
-                        <div class="description">
-                            <h5 class="fs-14 mb-0">Learn & Grow <br> Together</h5>
-                            <p class="fs-14 text-muted">Books open minds <br> and bring people closer</p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            <div class="image bg-black w-50 d-none d-md-block">
-                <img src="./assets/landing.jpg" alt="Landing" class="w-100"/>
+                </form>
             </div>
-          
-            
-        </section>
-    <!--End Content-->
 
+        </div>
+    </div>
+    <!-- end-form -->
 
-
-
-     <!-- start-footer -->
+    <!-- start-footer -->
   <footer class="p-3 bg-section">
     <div class="container">
       <div class="row  justify-content-md-between justify-content-lg-center align-items-start p-2">
@@ -183,7 +165,7 @@
   </footer>
   <p class="text-center bg-success my-0 text-light copy-right">&copy;2026 Malath. All rights reserved.</p>
   <!-- end-footer -->
-
+   
     <!--Bootstrape-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

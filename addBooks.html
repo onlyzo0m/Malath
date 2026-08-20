@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Books</title>
+  <!--FontAwesome-->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--Bootstrap Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
+    <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!--CSS File-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- start-nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./assets/logo.png" alt="malath" height="40" class="me-2">
+        <div>
+          <span class="fw-bold brand-color fs-4 d-block lh-1 text-green ">Malath</span>
+        </div>
+      </a>
+      <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" collapse navbar-collapse" id="navbarContent">
+
+        <ul class="links navbar-nav nav-underline mx-auto mb-2 mb-lg-0 gap-lg-3 text-nowrap px-4 ">
+          <li class="nav-item">
+            <a class="nav-link text-dark " href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Explore Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./addBooks.html">Add Book </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark " href="#">Requests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./about.html">About Us</a>
+          </li>
+        </ul>
+
+        <div class="r-nav  d-flex  gap-2">
+          <button class="btn btn-outline-success px-4 text-nowrap">Sign Up</button>
+          <button class="btn btn-success px-4 text-nowrap">
+            <a class="text-white  text-decoration-none" href="./login.html">Login</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end-nav -->
+<body>
+
+
+  <section class="add books">
+    <!-- start form -->
+    <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-8">
+        <div class="card p-4">
+          <form class="row g-3">
+
+             <div class="col-12">
+              <h1 class="h3 fw-bold mb-2">Add Your Book</h1>
+              <p class="text-muted">Share a book with the community and help others learn and grow.</p>
+             </div>
+
+           
+            <div class="col-12">
+              <label for="title" class="form-label">Book Title 
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter book title"
+                id="title"
+                required
+              />
+            </div>
+
+           
+            <div class="col-md-6">
+              <label for="Author" class="form-label">Author 
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter author name"
+                id="Author"
+                required
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label for="category" class="form-label">Category 
+                <span class="text-danger">*</span>
+              </label>
+              <select id="category" class="form-select">
+                <option selected disabled>Select category</option>
+                <option value="1">Novel</option>
+                <option value="2">School Books</option>
+                 <option value="3">English Books</option>
+              </select>
+            </div>
+
+             <div class="col-md-6">
+              <label for="language" class="form-label">language 
+                <span class="text-danger">*</span>
+              </label>
+              <select id="language" class="form-select">
+                <option selected disabled>Select language</option>
+                <option value="1">arabic</option>
+                <option value="2">english</option>
+              </select>
+            </div>
+
+             <div class="col-md-6">
+              <label for="condition" class="form-label">condition 
+                <span class="text-danger">*</span>
+              </label>
+                <select id="condition" class="form-select" >
+                 <option value="" selected disabled>Select condition</option>
+                 <option value="like-new">Like New</option>
+                 <option value="good">Good</option>
+                 <option value="acceptable">Acceptable</option>
+                 <option value="poor">Poor</option>
+              </select>
+            </div>
+
+             <div class="col-md-6">
+              <label for="Publish" class="form-label">Publish Year 
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="e.g.2020"
+                id="Publish"
+                required
+              />
+            </div>
+
+             <div class="col-md-6">
+             <label for="Pages" class="form-label">Pages 
+              <span class="text-danger">*</span>
+             </label>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="e.g.320"
+                id="Pages"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="bookDescription" class="form-label">
+                  Description <span class="text-danger">*</span>
+              </label>
+               <textarea 
+                 class="form-control" 
+                 rows="4"
+                 minlength="10"
+                 maxlength="500" 
+                 id="bookDescription"
+                 placeholder="Write a short description about the book..."
+                 required
+                 ></textarea>
+               <div class="d-flex justify-content-end mt-1">
+                <p class="text-muted" id="charCount">0 / 500</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- end form -->
+
+      <!-- start condition guide  -->
+      <div class="col-md-4">
+        <div class="card p-4">
+          <h5>Condition Guide</h5>
+          <!-- end condition guide-->
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- start-footer -->
+  <footer class="p-3 bg-section">
+    <div class="container">
+      <div class="row  justify-content-md-between justify-content-lg-center align-items-start p-2">
+
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="d-flex align-items-center ">
+            <i class="bi bi-book-fill fs-2 me-2 text-green d-flex  justify-content-center align-items-start"></i>
+            <h3 class="text-green">Malath</h3>
+          </div>
+          <div class="fs-14">
+            <p class="fw-bold my-1">Share.Borrow.Grow</p>
+            <p class="text-muted mb-2">A platform for sharing and borrowing <br> books in a simple and safe
+              way.</p>
+          </div>
+          <div class="icons m-0">
+            <a href="#" class="text-green"><i class="fa-brands fa-facebook me-1"></i></a>
+            <a href="#" class="text-green"><i class="fa-brands fa-instagram me-1"></i></a>
+            <a href="#" class="text-green"><i class="fa-brands fa-x-twitter me-1"></i></a>
+            <a href="#" class="text-green"><i class="fa-regular fa-envelope me-1"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2 mb-2">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Home</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Explore Books</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Add a Book</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">How It Works</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-2  mb-2">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Help Center</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Terms of Use</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Privacy Policy</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 ">
+          <div class="info">
+            <h5>Subscribe to our newsletter</h5>
+            <p class="fs-14 text-muted">Get the latest updates and new <br> books in your inbox.</p>
+          </div>
+
+          <form class="d-flex">
+            <input type="email" placeholder="Enter your email" "
+                  class=" form-control w-75 me-2">
+            <input type="submit" value="Subscribe" class="btn btn-success">
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+  <p class="text-center bg-success my-0 text-light copy-right">&copy;2026 Malath. All rights reserved.</p>
+  <!-- end-footer -->
+   <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+</body>
+    
+    
+</html>
+ 

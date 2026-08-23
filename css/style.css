@@ -69,12 +69,31 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+/*.mission{
+  background-image: url(../assets/mission-background.jpg);
+  background-size: cover;
+}*/
+/*.vision{
+  background-image: url(../assets/vision-background.jpg);
+  background-size: cover;
+}*/
+/*.icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--background-section);
+}*/
 /*End About Page*/
 /*كود حبيبه*/
 /*:root {

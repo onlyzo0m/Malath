@@ -1,80 +1,80 @@
-:root{
-  --primary-green-color: #1E5E3A;
-  --background-section: #F6F8F5;
+:root {
+  --primary-green-color: #1e5e3a;
+  --background-section: #f6f8f5;
 }
 /*Start Global*/
-html{
+html {
   scroll-behavior: smooth;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.text-green{
+.text-green {
   color: var(--primary-green-color);
 }
-.fs-14{
+.fs-14 {
   font-size: 14px;
 }
 /*End Global*/
 
-
 /*Start Nav*/
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: var(--primary-green-color) !important;
-    font-weight: 600;   
+  color: var(--primary-green-color) !important;
+  font-weight: 600;
 }
 
 .nav-underline .nav-link.active,
 .nav-underline .nav-link:hover {
-    border-bottom-color: var(--primary-green-color) !important;
+  border-bottom-color: var(--primary-green-color) !important;
 }
 /*End Nav*/
 
 /*Start Hero*/
 .hero {
   background-color: #fafaf8;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+}
+
+.btn-success:hover {
+  background: var(--primary-green-color);
+}
+.btn-outline-success:hover {
+  background: var(--primary-green-color);
+  transition: all 1s;
 }
 .btn-success {
   background: var(--primary-green-color);
   border: none;
 }
-.btn-success:hover {
-  background: #244a3d;
-}
-.btn-outline-success:hover{
-  background: #244a3d;
-  transition: all 1s; 
-}
 /*End Hero*/
 
 /*Start Footer*/
-.bg-section{
-  background-color: #E6EDE6;
+.bg-section {
+  background-color: #e6ede6;
 }
-.copy-right{
+.copy-right {
   background-color: var(--primary-green-color) !important;
 }
 /*End Footer*/
 
 /*Start About Page*/
-.icon{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 /*.mission{
   background-image: url(../assets/mission-background.jpg);
@@ -95,6 +95,63 @@ html{
     background-color: var(--background-section);
 }*/
 /*End About Page*/
+
+/* Custom Styles overriding or adding to Bootstrap */
+
+/* 1. Global Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* لون خلفية مريح للعين */
+}
+
+/* 2. Custom Navbar Styling */
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #0d6efd !important; /* توحيد لون اللوجو بلون البراند */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #0d6efd; /* خط تحت اسم الصفحة النشطة */
+}
+
+/* 3. Search Section */
+.explore-search h1 {
+  color: #212529;
+}
+
+/* Customizing Search Input Focus */
+.explore-search .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.25);
+}
+
+/* 4. Job Cards Enhancements */
+.card {
+  border: none;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease; /* انيميشن عند التحويم */
+}
+
+/* Hover Effect on Cards */
+.card:hover {
+  transform: translateY(-5px); /* رفع الكارت لفوق سنّة بسيطة */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Company Logo inside Card */
+.card-img-top {
+  object-fit: contain;
+  height: 50px;
+}
+
+/* 5. Footer Customization */
+footer {
+  font-size: 0.9rem;
+  border-top: 1px solid #343a40;
+}
+
 /*كود حبيبه*/
 /*:root {
   --brand-color: #1b5e3a;
@@ -127,3 +184,79 @@ html{
 body {
     background-color: #057734;
 }*/
+
+/* start addbooks css */
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.25rem #18703d !important;
+}
+.guide-icon-box {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  background-color: #eaf3ed;
+  color: #1b5e3a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.upload-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.upload-box {
+  border: 1px dashed #aaa;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  border-color: #198754;
+  background-color: #f8fff9;
+}
+
+#bookImages {
+  display: none;
+}
+
+.upload-content {
+  cursor: pointer;
+  width: 100%;
+}
+
+.upload-icon {
+  font-size: 30px;
+  color: #198754;
+  margin-bottom: 8px;
+}
+
+.upload-content p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.upload-content span {
+  display: block;
+  margin: 5px 0;
+  color: #666;
+}
+
+.upload-content small {
+  color: #888;
+}
+
+.upload-note {
+  display: block;
+  margin-top: 8px;
+  color: #777;
+}
+
+/* end addbooks css */

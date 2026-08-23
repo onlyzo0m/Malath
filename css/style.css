@@ -184,8 +184,8 @@ footer {
 body {
     background-color: #057734;
 }*/
-/* 
-==================== GLOBAL VARIABLES ==================== */
+
+/* GLOBAL VARIABLES  */
 :root {
   --primary-green: #198754;
   --hover-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -200,7 +200,7 @@ body {
   color: var(--primary-green) !important;
 }
 
-/* ==================== SEARCH BAR ==================== */
+/*  SEARCH BAR  */
 
 .input-group:focus-within {
   box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.2) !important;
@@ -212,7 +212,7 @@ body {
   box-shadow: none;
 }
 
-/* ==================== FILTER BUTTONS ==================== */
+/*  FILTER BUTTONS */
 .btn-filter {
   background-color: #ffffff;
   color: #6c757d;
@@ -231,7 +231,7 @@ body {
   box-shadow: 0 4px 10px rgba(25, 135, 84, 0.25);
 }
 
-/* ==================== BOOK CARDS ==================== */
+/*  BOOK CARDS */
 .book-card {
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;

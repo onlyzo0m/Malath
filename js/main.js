@@ -29,13 +29,12 @@ mode.addEventListener("click" , function(){
         landingImg.src = "./assets/landing-dark.jpg";
         backgroundImg.style.backgroundImage = "url('../assets/mission-dark.jpg')";
 
-
     }
     else{
         mode.classList.remove("bi-sun");
         mode.classList.add("bi-moon");
         landingImg.src = "./assets/landing-light.jpg";
-        backgroundImg.style.backgroundImage = "url('../assets/mission-dark.jpg')";
+        backgroundImg.style.backgroundImage = "url('../assets/mission-light.jpg')";
 
     }
 

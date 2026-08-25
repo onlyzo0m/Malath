@@ -5,54 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malath - Sign Up</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <!--FontAwesome-->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!--Bootstrap Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--CSS File-->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!-- Start Nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-dark border-opacity-10">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="./index.html">
-                <img src="./assets/logo.png" alt="malath" height="40" class="me-2">
-                <div>
-                    <span class="fw-bold fs-4 d-block lh-1 text-success">Malath</span>
-                </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!--Start Nav-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
 
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3 text-nowrap">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Explore</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Add Book</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Requests</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">About Us</a>
-                    </li>
-                </ul>
-
-                <div class="d-flex gap-2 mt-3 mt-lg-0">
-                    <a href="./login.html" class="btn btn-success px-4 text-nowrap">Login</a>
-                </div>
-            </div>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./assets/logo.png" alt="malath" height="40" class="me-2">
+        <div>
+          <span class="fw-bold brand-color fs-4 d-block lh-1 text-green ">Malath</span>
         </div>
-    </nav>
-    <!-- End Nav -->
+      </a>
+      <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" collapse navbar-collapse" id="navbarContent">
+        <ul class="links navbar-nav nav-underline mx-auto mb-2 mb-lg-0 gap-lg-3 text-nowrap px-4">
+          <li class="nav-item">
+            <a class="nav-link text-dark " href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./explore.html">Explore Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./addBooks.html">Add Book </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./about.html">About Us</a>
+          </li>
+        </ul>
+        <div class="r-nav  d-flex  gap-2 my-1">
+          
+        <div class="r-nav  d-flex  gap-2 my-1">
+          <a class="btn btn-success px-4 text-nowrap" href="./login.html">Login</a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!--End Nav-->
 
     <!-- Start Main Section -->
     <main class="container">
@@ -123,66 +128,77 @@
     </main>
     <!-- End Main Section -->
 
-    <!-- Start Footer -->
-    <footer class="p-4 bg-light border-top">
-        <div class="container">
-            <div class="row g-4 justify-content-between align-items-start">
+    <!--Start Footer-->
+  <footer class="p-3 bg-section">
+    <div class="container">
+      <div class="row  justify-content-md-between justify-content-lg-center align-items-start p-2">
 
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <div class="d-flex align-items-center">
-                        <img src="./assets/logo.png" alt="logo" height="40" class="me-2" />
-                        <h3 class="text-success m-0">Malath</h3>
-                    </div>
-                    <div class="mt-2">
-                        <p class="fw-bold my-1">Share.Borrow.Grow</p>
-                        <p class="text-muted mb-2">A platform for sharing and borrowing books in a simple and safe way.
-                        </p>
-                    </div>
-                    <div class="d-flex gap-3 mt-3">
-                        <a href="#" class="text-success fs-5"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="text-success fs-5"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="text-success fs-5"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#" class="text-success fs-5"><i class="fa-regular fa-envelope"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-6 col-sm-6 col-lg-2">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none text-muted">Home</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted">Explore Books</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted">Add a Book</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted">How It Works</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted">About Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-sm-6 col-lg-2">
-                    <h5>Support</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none text-muted">Help Center</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted">Terms of Use</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted">Privacy Policy</a></li>
-                        <li><a href="#" class="text-decoration-none text-muted">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-12 col-lg-4">
-                    <h5>Subscribe to our newsletter</h5>
-                    <p class="text-muted">Get the latest updates and new books in your inbox.</p>
-                    <form class="d-flex gap-2">
-                        <input type="email" placeholder="Enter your email" class="form-control">
-                        <input type="submit" value="Subscribe" class="btn btn-success">
-                    </form>
-                </div>
-
-            </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="d-flex align-items-center ">
+            <i class="bi bi-book-fill fs-2 me-2 text-green d-flex  justify-content-center align-items-start"></i>
+            <h3 class="text-green">Malath</h3>
+          </div>
+          <div class="fs-14">
+            <p class="fw-bold my-1">Share.Borrow.Grow</p>
+            <p class="text-muted mb-2">A platform for sharing and borrowing <br> books in a simple and safe
+              way.</p>
+          </div>
+          <div class="icons m-0">
+            <a href="#" class="text-green fs-5"><i class="fa-brands fa-facebook me-1"></i></a>
+            <a href="#" class="text-green fs-5"><i class="fa-brands fa-instagram me-1"></i></a>
+            <a href="#" class="text-green fs-5"><i class="fa-brands fa-x-twitter me-1"></i></a>
+            <a href="#" class="text-green fs-5"><i class="fa-regular fa-envelope me-1"></i></a>
+          </div>
         </div>
-    </footer>
 
-    <p class="text-center bg-success my-0 py-2 text-light">&copy; 2026 Malath. All rights reserved.</p>
-    <!-- End Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="col-sm-6 col-lg-2 mb-2">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Home</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Explore Books</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Add a Book</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">How It Works</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-2  mb-2">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Help Center</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Terms of Use</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Privacy Policy</a></li>
+            <li><a href="#" class="text-decoration-none text-muted fs-14">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 ">
+          <div class="info">
+            <h5>Subscribe to our newsletter</h5>
+            <p class="fs-14 text-muted">Get the latest updates and new <br> books in your inbox.</p>
+          </div>
+
+          <form class="d-flex">
+            <input type="email" placeholder="Enter your email" "
+                  class=" form-control w-75 me-2">
+            <input type="submit" value="Subscribe" class="btn btn-success">
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+  <p class="text-center bg-success my-0 text-light copy-right">&copy;2026 Malath. All rights reserved.</p>
+  <!-- End Footer -->
+
+    <!--Bootstrape-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <!--JS File-->
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

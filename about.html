@@ -17,15 +17,16 @@
 </head>
 
 <body>
+  
 
   <!--Start Nav-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
 
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="./assets/logo.png" alt="malath" height="40" class="me-2">
         <div>
-          <span class="fw-bold brand-color fs-4 d-block lh-1 text-green ">Malath</span>
+          <span class="fw-bold brand-color fs-4 d-block lh-1 text-green">Malath</span>
         </div>
       </a>
       <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -36,19 +37,20 @@
       <div class=" collapse navbar-collapse" id="navbarContent">
         <ul class="links navbar-nav nav-underline mx-auto mb-2 mb-lg-0 gap-lg-3 text-nowrap px-4">
           <li class="nav-item">
-            <a class="nav-link text-dark " href="./index.html">Home</a>
+            <a class="nav-link text-green text" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="./explore.html">Explore Books</a>
+            <a class="nav-link text-green text" href="./explore.html">Explore Books</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="./addBooks.html">Add Book </a>
+            <a class="nav-link text-green text" href="./addBooks.html">Add Book </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark active" href="./about.html">About Us</a>
+            <a class="nav-link text-green active text" href="./about.html">About Us</a>
           </li>
         </ul>
         <div class="r-nav  d-flex  gap-2 my-1">
+          <i id="themeBtn" class="bi bi-moon btn text-green fs-5"></i>
           <div class="r-nav  d-flex  gap-2 my-1">
           <a class="btn btn-outline-success px-4 text-nowrap" href="./sign-up.html">Sign Up</a>
         </div>
@@ -68,11 +70,11 @@
     <div class="info ms-lg-2 p-4">
       <div class="ms-lg-5 text-center text-md-start">
 
-        <p class="fst-italic fs-5 text-green fw-semibold">About Malath <span class="heart">&#9825;</span></p>
+        <p class="fst-italic fs-5 text-green fw-semibold text">About Malath <span class="heart">&#9825;</span></p>
         <h1 class="mb-4 lh-1 fst-italic">More than a platform, <br> we are a community <br>built on <span class="text-green">stories and trust.</span></h1>
-        <p class="mb-5 text-muted">At Malath, we connect book lovers and knowledge <br class="d-block d-lg-none">seekers <br class="d-none d-lg-block"> in a safe space where sharing, borrowing, <br class="d-block d-lg-none"> and discovering <br class="break d-none d-lg-block">books become a way of life.<br class="d-block d-lg-none"> Together, we inspire,learn,and <br class="break d-none d-lg-block"> grow - <br class="d-block d-lg-none"> one book at a time.</p>
+        <p class="mb-5 text">At Malath, we connect book lovers and knowledge <br class="d-block d-lg-none">seekers <br class="d-none d-lg-block"> in a safe space where sharing, borrowing, <br class="d-block d-lg-none"> and discovering <br class="break d-none d-lg-block">books become a way of life.<br class="d-block d-lg-none"> Together, we inspire,learn,and <br class="break d-none d-lg-block"> grow - <br class="d-block d-lg-none"> one book at a time.</p>
 
-        <div class="mb-2 d-flex container-fluid ms-0">
+        <div class="mb-2 d-flex container-fluid ps-0">
           <a href="./sign-up.html"><button class="btn btn-success me-2"><i class="bi bi-people me-2"></i> Join Our Community</button></a>
           <a href="./index.html#how-it-works"><button class="btn btn-outline-success">Discover how it works <i class="fa-solid fa-angles-right"></i></button></a>
         </div>
@@ -81,8 +83,8 @@
     </div>
 
 
-    <div class="image bg-info w-50 my-md-auto">
-      <img src="./assets/landing.jpg" alt="Landing" class="w-100">
+    <div  class="image bg-info w-50 my-md-auto">
+      <img src="./assets/landing-light.jpg" alt="Landing" class="w-100" id="landing-img">
     </div>
   </section>
   <!--End Landing Section-->
@@ -93,12 +95,12 @@
 
       <div class="left col-md-4 col-lg-4 ps-md-5 text-center text-md-start">
         <h3 class="my-4">Our Story</h3>
-        <p class="text-muted lh-lg mb-md-5 mb-lg-2">It all started with a simple idea: reading <br
+        <p class="lh-lg mb-md-5 mb-lg-2 text">It all started with a simple idea: reading <br
             class=" d-sm-block d-md-none d-lg-block"> changes lives.We saw how many great <br
             class="d-sm-block d-md-none d-lg-block"> books stay on shelves, unread, while <br
             class="d-sm-block d-md-none d-lg-block">someone else is looking for the exact <br
             class="d-sm-block d-md-none d-lg-block"> book we own.</p>
-        <p class="text-muted lh-lg">So we created Malath - a bridge between <br
+        <p class="lh-lg text">So we created Malath - a bridge between <br
             class="d-sm-block d-md-none d-lg-block">book lovers and knowlege seekers. A place <br
             class="d-sm-block d-md-none d-lg-block">where sharing is easy,borrowing is safe, <br
             class="d-sm-block d-md-none d-lg-block">and everyone can grow together.</p>
@@ -106,7 +108,7 @@
 
 
       <div class="right col-md-8 col-lg-8">
-        <div class="row mt-lg-5">
+        <div class="row mt-lg-5 justify-content-center align-items-center">
 
 
           <div class="col-md-6 col-lg-3 text-center ms-auto">
@@ -115,7 +117,7 @@
             </div>
             <i class="bi bi-book fs-1 text-green"></i>
             <h5 class="text-green mt-2">Books</h5>
-            <p class="text-muted mb-lg-5">Every book has a <br>story, and every story <br>deserves to be read.</p>
+            <p class="mb-lg-5 text">Every book has a <br>story, and every story <br>deserves to be read.</p>
           </div>
 
 
@@ -126,7 +128,7 @@
             </div>
             <i class="bi bi-people fs-1 text-green"></i>
             <h5 class="text-green mt-2">Readers</h5>
-            <p class="text-muted mb-lg-5">We connect readers <br> who want to explore, <br> learn, and be insired</p>
+            <p class="mb-lg-5 text">We connect readers <br> who want to explore, <br> learn, and be insired</p>
           </div>
 
 
@@ -136,7 +138,7 @@
             </div>
             <i class="bi bi-globe2 fs-1 text-green"></i>
             <h5 class="text-green mt-2">Community</h5>
-            <p class="text-muted mb-lg-5">We build a community <br> where trust, respect, <br> and kindness thrive.</p>
+            <p class="mb-lg-5 text">We build a community <br> where trust, respect, <br> and kindness thrive.</p>
           </div>
 
 
@@ -145,9 +147,10 @@
             <div class="count mx-auto my-4">
               <h3>04</h3>
             </div>
-            <i class="fa-solid fa-seedling fs-1 text-green"></i>
+            
+            <i class="bi bi-stars fs-1 text-green"></i>
             <h5 class="text-green mt-2">Growth</h5>
-            <p class="text-muted mb-lg-5">Together, we create <br> a culture of learning <br> that never stops.</p>
+            <p class="mb-lg-5 text">Together, we create <br> a culture of learning <br> that never stops.</p>
           </div>
 
         </div>
@@ -165,10 +168,10 @@
 
       <div class="col-lg-6 border border-1 rounded-5 ms-lg-3">
 
-        <div class=" pt-5 description">
+        <div id="description" class=" pt-5">
           <h3 class="mb-3">Our Mission</h3>
-          <p class="text-muted lh-lg">To make knowledge accessible to everyone <br> by encouraging book sharing and borrowing <br> in a simple,secure,and meaningful way.</p>
-          <p class="text-muted lh-lg">We aim to reduce book waste,spread <br>learning opportunities, and support a more<br> conscious and connected society.</p>
+          <p class="lh-lg text">To make knowledge accessible to everyone <br> by encouraging book sharing and borrowing <br> in a simple,secure,and meaningful way.</p>
+          <p class="lh-lg text">We aim to reduce book waste,spread <br>learning opportunities, and support a more<br> conscious and connected society.</p>
         </div>
       </div>
 
@@ -182,7 +185,7 @@
             <i class="bi bi-search count me-3 fs-4"></i>
             <div>
               <h6 class="text-green my-0">Discover Books</h6>
-              <p class="text-muted fs-14">Find books you love from people around you.</p>
+              <p class="fs-14 text">Find books you love from people around you.</p>
             </div>
           </div>
 
@@ -191,7 +194,7 @@
             <i class="bi bi-send count fs-4 me-3"></i>
             <div>
               <h6 class="text-green my-0">Request & Connect</h6>
-              <p class="text-muted fs-14">Send requests and connect with trusted members.</p>
+              <p class="fs-14 text">Send requests and connect with trusted members.</p>
             </div>
           </div>
 
@@ -201,7 +204,7 @@
             <i class="bi bi-book count fs-4 me-3"></i>
             <div>
               <h6 class="text-green my-0">Borrow & Read</h6>
-              <p class="text-muted fs-14">Borrow,read,and enjou you next great read.</p>
+              <p class="fs-14 text">Borrow,read,and enjou you next great read.</p>
             </div>
           </div>
 
@@ -210,7 +213,7 @@
             <i class="bi bi-heart count fs-4 me-3"></i>
             <div>
               <h6 class="text-green my-0">Share & Inspire</h6>
-              <p class="text-muted fs-14">Share your books and inspire someone else.</p>
+              <p class="fs-14 text">Share your books and inspire someone else.</p>
             </div>
           </div>
 
@@ -230,15 +233,14 @@
         <div class="col-md-2">
           <i class="bi bi-people text-green fs-2"></i>
           <h5 class="text-green">Community</h5>
-          <p class="text-muted">We believe in the power <br> of people and the beauty <br> of shared knowledge</p>
+          <p class="text">We believe in the power <br> of people and the beauty <br> of shared knowledge</p>
         </div>
 
 
         <div class="col-md-2">
           <i class="bi bi-shield-check text-green fs-2"></i>
-
           <h5 class="text-green">Trust</h5>
-          <p class="text-muted">A safe and reliable space <br> built on respect, <br> honesty, and trust.</p>
+          <p class="text">A safe and reliable space <br> built on respect, <br> honesty, and trust.</p>
         </div>
 
 
@@ -246,7 +248,7 @@
         <div class="col-md-2">
           <i class="bi bi-book text-green fs-2"></i>
           <h5 class="text-green">Access</h5>
-          <p class="text-muted">Books and knowledge <br>should be accessible <br> to everyone.</p>
+          <p class="text">Books and knowledge <br>should be accessible <br> to everyone.</p>
         </div>
 
 
@@ -254,7 +256,7 @@
         <div class="col-md-2">
           <i class="bi bi-stars text-green fs-2"></i>
           <h5 class="text-green">Sustainability</h5>
-          <p class="text-muted">Sharing books means <br> less waste and a more <br> sustainable world.</p>
+          <p class="text">Sharing books means <br> less waste and a more <br> sustainable world.</p>
         </div>
 
 
@@ -262,7 +264,7 @@
         <div class="col-md-2">
           <i class="bi bi-heart text-green fs-2"></i>
           <h5 class="text-green">Empathy</h5>
-          <p class="text-muted">We treat every membet <br> with kindness and <br>understanding.</p>
+          <p class="text">We treat every membet <br> with kindness and <br>understanding.</p>
         </div>
       </div>
 
@@ -280,7 +282,7 @@
         <i class="bi bi-people text-green fs-1 me-3"></i>
         <div class="description">
           <h5 class="mb-0 fs-2 text-green">900+</h5>
-          <p class="text-muted fs-14">Active Members</p>
+          <p class="fs-14 text">Active Members</p>
         </div>
       </div>
 
@@ -289,7 +291,7 @@
         <i class="bi bi-book text-green fs-1 me-3"></i>
         <div class="description">
           <h5 class="mb-0 fs-2 text-green">500+</h5>
-          <p class="text-muted fs-14">Books Shared</p>
+          <p class="fs-14 text">Books Shared</p>
         </div>
       </div>
 
@@ -299,7 +301,7 @@
         <i class="bi bi-arrow-repeat text-green fs-1 me-3"></i>
         <div class="description">
           <h5 class="mb-0 fs-2 text-green">1000+</h5>
-          <p class="text-muted fs-14">Successful Borrows</p>
+          <p class="fs-14 text">Successful Borrows</p>
         </div>
       </div>
 
@@ -310,7 +312,7 @@
         <i class="bi bi-geo-alt text-green fs-1 me-3"></i>
         <div class="description">
           <h5 class="mb-0 fs-2 text-green">20+</h5>
-          <p class="text-muted fs-14">Citites</p>
+          <p class="fs-14 text">Citites</p>
         </div>
       </div>
 
@@ -336,7 +338,7 @@
 
       <div class="col-md-3 col-lg-3 text-center text-md-start mt-3">
         <h3 class="fw-semibold mb-3">Have a book that <br> <span class="text-green">Changed you?</span></h3>
-        <p class="text-muted mb-3">Share it, and change <br>someone else's story</p>
+        <p class="mb-3 text">Share it, and change <br>someone else's story</p>
         <a href="./addBooks.html"><button class="btn btn-success">Share a Book <i
               class="fa-solid fa-angles-right"></i></button></a>
       </div>

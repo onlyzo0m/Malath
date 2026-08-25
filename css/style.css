@@ -35,7 +35,6 @@ html {
 /*Start Hero*/
 .hero {
   background-color: #fafaf8;
- /* min-height: 100vh;*/
   display: flex;
   align-items: center;
 }

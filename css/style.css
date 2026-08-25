@@ -124,6 +124,12 @@ html {
     background-attachment: fixed;
   }
 }
+@media (min-width: 768px){
+  .mission .description{
+    padding-left: 400px;
+  }
+
+}
 /*@media (max-width: 991px){
   .landing .break{
     display: none !important;

@@ -334,6 +334,7 @@ body {
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
+  color: var(--text-muted);
 }
 
 .form-control:focus,

@@ -47,7 +47,7 @@ html {
   transition: all 1s;
 }
 .btn-success {
-  background: var(--primary-green-color);
+  background: var(--primary-green-color) !important;
   border: none;
 }
 /*End Hero*/
@@ -62,6 +62,16 @@ html {
 /*End Footer*/
 
 /*Start About Page*/
+.landing-image{
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+#landing-img{
+  mix-blend-mode: screen; 
+}
 .icon {
   width: 40px;
   height: 40px;
@@ -76,7 +86,6 @@ html {
   -o-border-radius: 50%;
 }
 .count {
-  /*background-color: #fef2e9;*/
   background-color: #ebf1ec;
   color: var(--primary-green-color);
   width: 60px;
@@ -103,6 +112,9 @@ html {
   padding-left: 300px;
   background-position: center;
 }
+/*#landing-img{
+  mix-blend-mode: screen;
+}*/
 /*.description{
   background-image: url(../assets/mission-dark.jpg);
   background-size: cover;
@@ -219,39 +231,6 @@ footer {
   border-top: 1px solid #343a40;
 }
 
-/*كود حبيبه*/
-/*:root {
-  --brand-color: #1b5e3a;
-  --brand-light-bg: #f4f8f5;
-}
-
-.btn-success {
-  background-color: var(--brand-color);
-  border-color: var(--brand-color);
-}
-
-
-.bg-success {
-  background-color: var(--brand-color) !important;
-}
-
-.text-success {
-  color: var(--brand-color) !important;
-}
-
-
-.bg-light {
-  background-color: var(--brand-light-bg) !important;
-}
-
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-}
-body {
-    background-color: #057734;
-}*/
-
 /* GLOBAL VARIABLES  */
 :root {
   --primary-green: #198754;
@@ -334,6 +313,7 @@ body {
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
+  color: var(--text-muted);
 }
 
 .form-control:focus,

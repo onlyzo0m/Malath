@@ -210,8 +210,7 @@ body {
 
 .input-group .form-control:focus {
   box-shadow: none;
-}
-
+} 
 /*  FILTER BUTTONS */
 .btn-filter {
   background-color: #ffffff;

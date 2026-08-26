@@ -9723,3 +9723,148 @@
     src: url(../webfonts/fa-v4compatibility.woff2) format("woff2");
     unicode-range: u+f041, u+f047, u+f065-f066, u+f07d-f07e, u+f080, u+f08b, u+f08e, u+f090, u+f09a, u+f0ac, u+f0ae, u+f0b2, u+f0d0, u+f0d6, u+f0e4, u+f0ec, u+f10a-f10b, u+f123, u+f13e, u+f148-f149, u+f14c, u+f156, u+f15e, u+f160-f161, u+f163, u+f175-f178, u+f195, u+f1f8, u+f219, u+f27a
 }
+/* DARK MODE EXPLORE  */
+
+/* Dark Mode Variables  */
+[data-theme="dark"] {
+    color-scheme: dark;
+    --bg-dark: #121212;
+    --surface-dark: #1e1e1e;
+    --border-dark: #2d2d2d;
+    --text-main: #e0e0e0;
+    --text-muted-dark: #a0a0a0;
+    --green-primary: #2ecc71;
+    --green-hover: #27ae60;
+}
+
+[data-theme="dark"] body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-main) !important;
+}
+
+/* Navbar */
+[data-theme="dark"] #navbar {
+    background-color: var(--surface-dark) !important;
+    border-bottom: 1px solid var(--border-dark);
+}
+
+[data-theme="dark"] .navbar-toggler {
+    border-color: var(--border-dark);
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+[data-theme="dark"] .nav-link {
+    color: var(--text-main) !important;
+}
+
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+    color: var(--green-primary) !important;
+}
+
+
+[data-theme="dark"] .text-green,
+[data-theme="dark"] .brand-color {
+    color: var(--green-primary) !important;
+}
+
+[data-theme="dark"] .text-muted,
+[data-theme="dark"] .text-secondary {
+    color: var(--text-muted-dark) !important;
+}
+
+
+[data-theme="dark"] .input-group {
+    background-color: var(--surface-dark) !important;
+    border-color: var(--border-dark) !important;
+}
+
+[data-theme="dark"] .input-group-text,
+[data-theme="dark"] .input-group .form-control {
+    background-color: var(--surface-dark) !important;
+    color: var(--text-main) !important;
+}
+
+[data-theme="dark"] .input-group .form-control::placeholder {
+    color: var(--text-muted-dark) !important;
+}
+
+/*  Category Filter Buttons */
+[data-theme="dark"] .btn-filter {
+    background-color: var(--surface-dark);
+    color: var(--text-main);
+    border: 1px solid var(--border-dark);
+}
+
+[data-theme="dark"] .btn-filter:hover,
+[data-theme="dark"] .btn-filter.active {
+    background-color: var(--green-primary) !important;
+    color: #121212 !important;
+    border-color: var(--green-primary) !important;
+}
+
+/*  Book Cards & Badges */
+[data-theme="dark"] .book-card {
+    background-color: var(--surface-dark) !important;
+    border: 1px solid var(--border-dark) !important;
+    color: var(--text-main) !important;
+}
+
+[data-theme="dark"] .badge-category {
+    background-color: #27272a !important;
+    color: var(--green-primary) !important;
+    border: 1px solid var(--border-dark);
+}
+
+[data-theme="dark"] .status-available {
+    color: var(--green-primary) !important;
+}
+
+
+[data-theme="dark"] #themeBtn {
+    color: var(--green-primary) !important;
+}
+
+[data-theme="dark"] .btn-outline-success {
+    color: var(--green-primary) !important;
+    border-color: var(--green-primary) !important;
+}
+
+[data-theme="dark"] .btn-outline-success:hover {
+    background-color: var(--green-primary) !important;
+    color: #121212 !important;
+}
+
+[data-theme="dark"] .btn-success {
+    background-color: var(--green-primary) !important;
+    border-color: var(--green-primary) !important;
+    color: #121212 !important;
+}
+
+
+[data-theme="dark"] footer.bg-section {
+    background-color: var(--surface-dark) !important;
+    border-top: 1px solid var(--border-dark);
+}
+
+[data-theme="dark"] footer h5,
+[data-theme="dark"] footer h3 {
+    color: var(--text-main) !important;
+}
+
+[data-theme="dark"] footer a.text-muted {
+    color: var(--text-muted-dark) !important;
+}
+
+[data-theme="dark"] footer a.text-muted:hover {
+    color: var(--green-primary) !important;
+}
+
+[data-theme="dark"] footer .form-control {
+    background-color: var(--bg-dark) !important;
+    border-color: var(--border-dark) !important;
+    color: var(--text-main) !important;
+}

@@ -40,3 +40,44 @@ mode.addEventListener("click" , function(){
 
 })
 //End Dark Mode in About Page
+
+//explore dark mode
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // 1. Target Filter Buttons & Sections
+    const filterButtons = document.querySelectorAll(".btn-filter");
+    const sections = {
+    english: document.getElementById("englishBooks"),
+    school: document.getElementById("schoolBooks"),
+    novels: document.getElementById("novelBooks")
+    };
+
+    // 2. Click Handling Logic
+    filterButtons.forEach(button => {
+    button.addEventListener("click", function () {
+        const selectedFilter = this.getAttribute("data-filter");
+
+        // Remove 'active' class from all buttons and add to the clicked one
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active");
+
+        // Toggle visibility based on selected filter
+        if (selectedFilter === "all") {
+        Object.values(sections).forEach(sec => sec && sec.classList.remove("d-none"));
+        } else {
+        Object.keys(sections).forEach(key => {
+            if (sections[key]) {
+        if (key === selectedFilter) {
+                sections[key].classList.remove("d-none");
+            } else {
+                sections[key].classList.add("d-none");
+            }
+            }
+        });
+            }
+            });
+        });
+    });
+</script>
+
+//end dark mode explore page

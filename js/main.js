@@ -40,4 +40,60 @@ mode.addEventListener("click" , function(){
     }
 
 })
+
 //End Dark Mode in About Page
+
+
+// start js add book
+
+let darkModeBtn = document.querySelector("#themeBtn");
+
+
+let card = document.querySelectorAll(".card");
+let links= document.querySelectorAll(".text-muted")
+let inputs = document.querySelectorAll(".form-control, .form-select");
+
+darkModeBtn.addEventListener("click", function () {
+
+    card.forEach(function (card) {
+
+        card.classList.toggle("bg-dark");
+        card.classList.toggle("text-white");
+
+    });
+
+
+    if (document.body.classList.contains("bg-dark")) {
+
+        links.forEach(function (link) {
+            link.classList.remove("text-muted");
+            link.classList.add("text-light");
+        });
+
+    } else {
+
+        links.forEach(function (link) {
+            link.classList.remove("text-light");
+            link.classList.add("text-muted");
+        });
+
+};
+});
+
+
+
+
+
+
+
+// vanilla js to count textarea
+
+let textarea = document.querySelector("#bookDescription");
+let count = document.querySelector("#charCount");
+
+textarea.addEventListener("input", function () {
+  count.textContent = textarea.value.length;
+});
+
+// end js add book
+

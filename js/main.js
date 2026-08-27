@@ -90,6 +90,7 @@ mode.addEventListener("click" , function(){
         
     }
     else{
+        //light
         mode.classList.remove("bi-sun");
         mode.classList.add("bi-moon");
         landingImg.src = "./assets/landing-light.png";
@@ -111,6 +112,8 @@ mode.addEventListener("click" , function(){
 }
 
 //End Dark Mode in About Page
+
+//End About Page
 
 //explore dark mode
 
@@ -152,11 +155,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //end dark mode explore page
-//End About Page
+
+
 
 // start js add book
 
-let darkModeBtn = document.querySelector("#themeBtn");
+//let darkModeBtn = document.querySelector("#themeBtn");
+let darkModeBtn =document.querySelector("#themeBtn");
 let card = document.querySelectorAll(".card");
 let links= document.querySelectorAll(".text-muted")
 

@@ -56,22 +56,15 @@ html {
 .bg-section {
   background-color: #e6ede6;
 }
+.bg-green{
+  background-color: var(--primary-green-color);
+}
 .copy-right {
   background-color: var(--primary-green-color) !important;
 }
 /*End Footer*/
 
 /*Start About Page*/
-.landing-image{
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-}
-#landing-img{
-  mix-blend-mode: screen; 
-}
 .icon {
   width: 40px;
   height: 40px;
@@ -101,78 +94,50 @@ html {
   -o-border-radius: 50%;
 }
 #description {
+  padding-left: 300px;
+}
+#mission{
+  overflow: hidden;
   background-image: url(../assets/mission-light.jpg);
   background-size: cover;
-  padding-bottom: 100px;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  padding-left: 300px;
   background-position: center;
-}
-/*#landing-img{
-  mix-blend-mode: screen;
-}*/
-/*.description{
-  background-image: url(../assets/mission-dark.jpg);
-  background-size: cover;
-  padding-bottom: 100px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
-  padding-left: 300px;
-}*/
-.description-box,
-.description-content {
-  min-height: 100%;
 }
 @media (max-width: 767px) {
   .landing {
     flex-direction: column !important;
   }
-  .landing .image,
-  .landing .image img {
+  .landing-image,
+  .landing-image img {
     width: 100% !important;
   }
-  .mission .description {
-    padding-left: 300px;
-    padding-bottom: 10px;
+   #mission{
+    background-image: url(../assets/mission-mobile.jpg);
     background-attachment: fixed;
+    margin-bottom: 15px;  
+   }
+   #description {
+    padding-left: 25px;
+   
   }
 }
 @media (min-width: 768px){
-  .mission .description{
+  #description{
     padding-left: 400px;
   }
 
 }
-/*@media (max-width: 991px){
-  .landing .break{
-    display: none !important;
+@media (min-width: 992px){
+  #description{
+    padding-left: 360px;
   }
-}*/
-/*.mission{
-  background-image: url(../assets/mission-background.jpg);
-  background-size: cover;
-}*/
-/*.vision{
-  background-image: url(../assets/vision-background.jpg);
-  background-size: cover;
-}*/
-/*.icons{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background-color: var(--background-section);
-}*/
+}
+
+
 /*End About Page*/
 
 /* Custom Styles overriding or adding to Bootstrap */

@@ -220,8 +220,7 @@ body {
 
 .input-group .form-control:focus {
   box-shadow: none;
-}
-
+} 
 /*  FILTER BUTTONS */
 .btn-filter {
   background-color: #ffffff;
@@ -279,6 +278,7 @@ body {
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
+  color: var(--text-muted);
 }
 
 .form-control:focus,

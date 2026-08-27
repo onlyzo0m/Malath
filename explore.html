@@ -105,13 +105,14 @@
 
   
     <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
-      <button class="btn btn-filter">All</button>
-      <button class="btn btn-filter">School Books</button>
-      <button class="btn btn-filter">Novels</button>
-      <button class="btn btn-filter active">English Books</button>
-    </div>
-
+  <button class="btn btn-filter" data-filter="all">All</button>
+  <button class="btn btn-filter" data-filter="school">School Books</button>
+  <button class="btn btn-filter" data-filter="novels">Novels</button>
+  <button class="btn btn-filter active" data-filter="english">English Books</button>
+</div>
     <!-- BOOK LISTING -->
+     <div class="container mt-5 mb-5 book-section" id="englishBooks">
+
     <div class="row g-4">
 
       <!-- BOOK ITEM 1 -->
@@ -223,19 +224,15 @@
       </div>
 
     </div>
+  </div>
+    </section>
     
 </main>
 
 <!--start school books-->  
 
-  <section class="container mt-5 mb-5">
+  <section class="container mt-5 mb-5 book-section" id="schoolBooks">
     
-    <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
-      <button class="btn btn-filter">All</button>
-      <button class="btn btn-filter active">School Books</button>
-      <button class="btn btn-filter">Novels</button>
-      <button class="btn btn-filter">English Books</button>
-    </div>
 
     
     <div class="row g-4">
@@ -353,16 +350,8 @@
 
 
 <!--start novel-->
-  
-<section class="mb-5">
+<section class="container mt-5 mb-5 book-section" id="novelBooks">
     
-    <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
-      <button class="btn btn-filter">All</button>
-      <button class="btn btn-filter">School Books</button>
-      <button class="btn btn-filter active">Novels</button>
-      <button class="btn btn-filter">English Books</button>
-    </div>
-
 
     <div class="row g-4">
         <!--book1-->
@@ -545,6 +534,90 @@
 
   <p class="text-center bg-success my-0 text-light copy-right">&copy;2026 Malath. All rights reserved.</p>
 
+
+
+
+  <script>
+
+  // Get all filter buttons
+  const filterButtons = document.querySelectorAll(".btn-filter");
+
+  // Get the three book sections
+  const englishBooks = document.getElementById("englishBooks");
+  const schoolBooks = document.getElementById("schoolBooks");
+  const novelBooks = document.getElementById("novelBooks");
+
+
+  // Add click event to every filter button
+  filterButtons.forEach(button => {
+
+    button.addEventListener("click", function () {
+
+      // Get the filter type from data-filter
+      const filter = this.getAttribute("data-filter");
+
+
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => {
+        btn.classList.remove("active");
+      });
+
+
+      // Add active class to the clicked button
+      this.classList.add("active");
+
+
+      // Show all books
+      if (filter === "all") {
+
+        englishBooks.classList.remove("d-none");
+        schoolBooks.classList.remove("d-none");
+        novelBooks.classList.remove("d-none");
+
+      }
+
+
+      // Show English Books only
+      else if (filter === "english") {
+
+        englishBooks.classList.remove("d-none");
+        schoolBooks.classList.add("d-none");
+        novelBooks.classList.add("d-none");
+
+      }
+
+
+      // Show School Books only
+      else if (filter === "school") {
+
+        englishBooks.classList.add("d-none");
+        schoolBooks.classList.remove("d-none");
+        novelBooks.classList.add("d-none");
+
+      }
+
+
+      // Show Novels only
+      else if (filter === "novels") {
+
+        englishBooks.classList.add("d-none");
+        schoolBooks.classList.add("d-none");
+        novelBooks.classList.remove("d-none");
+
+      }
+
+    });
+
+  });
+
+
+  // When the page opens:
+  // Show English Books only
+  englishBooks.classList.remove("d-none");
+  schoolBooks.classList.add("d-none");
+  novelBooks.classList.add("d-none");
+
+</script>
 </body>
 </html>
   <!-- end-footer -->

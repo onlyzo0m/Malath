@@ -2,9 +2,8 @@
 
 //Start Stats
 
-let counters = document.querySelectorAll(".counter");
-
 let section = document.querySelector(".counter-section");
+let counters = document.querySelectorAll(".counter");
 
 let observer = new IntersectionObserver(function(entries) {
 
@@ -43,7 +42,7 @@ let mode = document.querySelector("#themeBtn");
 let navbar = document.querySelector("#navbar");
 let paragraph = document.querySelectorAll(".paragraph");
 let landingImg = document.querySelector("#landing-img");
-let backgroundImg = document.querySelector("#description");
+let backgroundImg = document.querySelector("#mission");
 let stats = document.querySelector("#stats");
 let stat = document.querySelectorAll(".stat");
 let image = document.querySelector("#last-section");
@@ -64,15 +63,15 @@ mode.addEventListener("click" , function(){
     footer.classList.toggle("bg-dark");
 
     stats.classList.toggle("bg-section");
-    stats.classList.toggle("bg-success");
+    stats.classList.toggle("bg-green");
 
     if(document.body.classList.contains("bg-dark")){
         // dark
         mode.classList.remove("bi-moon");
         mode.classList.add("bi-sun");
-        landingImg.src = "./assets/landing-dark.jpg";
+        landingImg.src = "./assets/landing-dark.png";
         backgroundImg.style.backgroundImage = "url('../assets/mission-dark.jpg')";
-        image.src = "./assets/last-section.jpg";
+        image.src = "./assets/chair-dark.jpg";
 
         paragraph.forEach(function(p) {
             p.classList.remove("text-muted");
@@ -87,9 +86,9 @@ mode.addEventListener("click" , function(){
     else{
         mode.classList.remove("bi-sun");
         mode.classList.add("bi-moon");
-        landingImg.src = "./assets/landing-light.jpg";
+        landingImg.src = "./assets/landing-light.png";
         backgroundImg.style.backgroundImage = "url('../assets/mission-light.jpg')";
-        image.src = "./assets/quote.jpg";
+        image.src = "./assets/chair-light.jpg";
 
         paragraph.forEach(function(p) {
             p.classList.remove("text-white");

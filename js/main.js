@@ -153,11 +153,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // start js add book
 
 let darkModeBtn = document.querySelector("#themeBtn");
-
-
 let card = document.querySelectorAll(".card");
 let links= document.querySelectorAll(".text-muted")
-let inputs = document.querySelectorAll(".form-control, .form-select");
+
 
 darkModeBtn.addEventListener("click", function () {
 

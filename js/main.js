@@ -6,6 +6,8 @@ let counters = document.querySelectorAll(".counter");
 
 let section = document.querySelector(".counter-section");
 
+if(section){
+
 let observer = new IntersectionObserver(function(entries) {
 
     if (entries[0].isIntersecting) {
@@ -35,6 +37,8 @@ let observer = new IntersectionObserver(function(entries) {
 
 observer.observe(section);
 
+}
+
 //End Stats
 
 
@@ -49,6 +53,8 @@ let stat = document.querySelectorAll(".stat");
 let image = document.querySelector("#last-section");
 let footer = document.querySelector("#footer");
 
+
+if(mode){
 
 mode.addEventListener("click" , function(){
     document.body.classList.toggle("bg-dark")
@@ -103,12 +109,12 @@ mode.addEventListener("click" , function(){
     }
 
 })
+}
 
 //End Dark Mode in About Page
 
-<<<<<<< HEAD
 //explore dark mode
-<script>
+
 document.addEventListener("DOMContentLoaded", function () {
     // 1. Target Filter Buttons & Sections
     const filterButtons = document.querySelectorAll(".btn-filter");
@@ -144,10 +150,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
-</script>
+
 
 //end dark mode explore page
-=======
 //End About Page
 
 // start js add book
@@ -156,7 +161,7 @@ let darkModeBtn = document.querySelector("#themeBtn");
 let card = document.querySelectorAll(".card");
 let links= document.querySelectorAll(".text-muted")
 
-
+if(darkModeBtn){
 darkModeBtn.addEventListener("click", function () {
 
     card.forEach(function (card) {
@@ -184,7 +189,7 @@ darkModeBtn.addEventListener("click", function () {
 };
 });
 
-
+}
 
 
 
@@ -201,4 +206,3 @@ textarea.addEventListener("input", function () {
 
 // end js add book
 
->>>>>>> d932675d5254eee8bd4ee0448c4d10e59dd8b678

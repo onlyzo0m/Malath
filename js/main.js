@@ -181,7 +181,7 @@ if (darkModeBtn) {
         
     }
 
-    card.forEach(function (card) {
+    
         card.forEach(function (card) {
 
             card.classList.toggle("bg-dark");

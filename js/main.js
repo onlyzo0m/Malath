@@ -2,9 +2,8 @@
 
 //Start Stats
 
-let counters = document.querySelectorAll(".counter");
-
 let section = document.querySelector(".counter-section");
+let counters = document.querySelectorAll(".counter");
 
 let observer = new IntersectionObserver(function(entries) {
 

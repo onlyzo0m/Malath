@@ -105,8 +105,6 @@ mode.addEventListener("click" , function(){
 })
 
 //End Dark Mode in About Page
-
-<<<<<<< HEAD
 //explore dark mode
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -147,7 +145,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 //end dark mode explore page
-=======
 //End About Page
 
 // start js add book
@@ -201,4 +198,3 @@ textarea.addEventListener("input", function () {
 
 // end js add book
 
->>>>>>> d932675d5254eee8bd4ee0448c4d10e59dd8b678

@@ -168,6 +168,20 @@ let links = document.querySelectorAll(".text-muted")
 if (darkModeBtn) {
     darkModeBtn.addEventListener("click", function () {
 
+        if(document.body.classList.contains("bg-dark")){
+        // dark
+        mode.classList.remove("bi-moon");
+        mode.classList.add("bi-sun");
+        
+    }
+    else{
+        mode.classList.remove("bi-sun");
+        mode.classList.add("bi-moon");
+    
+        
+    }
+
+    card.forEach(function (card) {
         card.forEach(function (card) {
 
             card.classList.toggle("bg-dark");

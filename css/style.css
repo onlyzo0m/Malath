@@ -98,7 +98,7 @@ html {
 }
 #mission{
   overflow: hidden;
-  background-image: url(../assets/mission-light.jpg);
+  background-image: url("../assets/mission-light.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 8px;
@@ -116,7 +116,7 @@ html {
     width: 100% !important;
   }
    #mission{
-    background-image: url(../assets/mission-mobile.jpg);
+    background-image: url("../assets/mission-mobile.jpg");
     background-attachment: fixed;
     margin-bottom: 15px;  
    }
